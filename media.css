@@ -1,0 +1,121 @@
+@media screen and (max-width: 1100px) {
+    .abt-container{
+        grid-template-columns: 1fr;
+    }
+    .portfolios, .blogs{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-content-con{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .header-content{
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+        height: auto;
+    }
+    .section{
+        padding: 1rem;
+    }
+    .main-title{
+        padding-top: 3rem;
+        font-size: 1em;
+    }
+    .main-title .bg-text{
+        font-size: 1.4em;
+    }
+    .left-header{
+        justify-content: center;
+    }
+    .left-header .h-shape{
+        display: none;
+    }
+    .left-header .image{
+        margin: 3rem;
+        width: 100%;
+    }
+    .left-header .image::after{
+        content: '';
+        transition: var(--transition);
+        width: 65%;
+        height: 100%;
+        background-color: var(--color-secondary);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        clip-path: polygon(0 0, 45% 0, 80% 100%, 0 100%);
+    }
+
+    .right-header{
+        padding: 3rem;
+        grid-row: 1;
+    }
+
+
+    
+    .left-about{
+        padding: 3rem;
+    }
+    .right-about{
+        grid-template-columns: 1fr;
+        padding: 3rem;
+    }
+    .right-about .about-text{
+        align-items: center;
+    }
+
+    .progress-bars{
+        grid-template-columns: 1fr;
+        padding: 0 3rem;
+    }
+
+    .timeline{
+        grid-template-columns: 1fr;
+        padding: 0 3rem;
+    }
+
+    .portfolios{
+        grid-template-columns: 1fr;
+        padding: 0 3rem;
+        padding-bottom: 5rem;
+    }
+    .port-text{
+        padding: 0 3rem;
+    }
+
+    .blogs{
+        grid-template-columns: 1fr;
+        padding: 0 3rem;
+        padding-bottom: 5rem;
+    }
+
+    .contact-content-con{
+        padding: 0 3rem;
+        padding-bottom: 6rem;
+    }
+    .first-input{
+        flex-direction: column;
+    }
+    .contact-info .contact-item{
+        grid-template-columns: 1fr;
+        margin: 2rem 0;
+    }
+    .contact-item p{
+        text-align: right;
+    }
+
+
+    .controls{
+        top: auto;
+        bottom: 0;
+        transform: translateY(0);
+        left: 0;
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
+
